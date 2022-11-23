@@ -40,6 +40,18 @@ describe("ETHPool Unit Tests", function () {
       expect(totalDeposits.toString()).to.be.equals(amount.toString());
       expect(user1Deposit.toString()).to.be.equals(amount.toString());
     });
+
+    it("correctly deposits the user's funds using the receive function", async () => {
+      const amount = ethers.utils.parseUnits("100", "gwei");
+      let tx = await user1.sendTransaction({ to: ethPool.address, value: amount });
+      let receipt = await tx.wait(1);
+
+      const totalDeposits = await ethPool.totalDeposits();
+      const user1Deposit = await ethPool.deposits(user1.address);
+
+      expect(totalDeposits.toString()).to.be.equals(amount.toString());
+      expect(user1Deposit.toString()).to.be.equals(amount.toString());
+    });
   });
 
   describe("withdraw", () => {
