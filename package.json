@@ -9,7 +9,9 @@
     "coverage": "hardhat coverage",
     "node": "hardhat node",
     "deploy": "hardhat deploy",
-    "deploy:goerli": "hardhat deploy --network goerli"
+    "deploy:goerli": "hardhat deploy --network goerli",
+    "checkTotalDeposits": "hardhat run scripts/checkTotalDeposits.ts --network localhost",
+    "checkTotalDeposits:goerli": "hardhat run scripts/checkTotalDeposits.ts --network goerli"
   },
   "author": "",
   "license": "ISC",
