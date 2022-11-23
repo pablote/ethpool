@@ -1,0 +1,9 @@
+# ethpool
+
+## .env
+
+```
+GOERLI_RPC_URL=
+GOERLI_PRIVATE_KEY=
+ETHERSCAN_API_KEY=
+```
