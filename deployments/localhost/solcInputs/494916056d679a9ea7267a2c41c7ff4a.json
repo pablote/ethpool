@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/ETHPool.sol": {
+      "content": "// SPDX-License-Identifier: GPL-3.0\npragma solidity 0.8.17;\n\nerror ETHPool__NotTheOwner();\nerror ETHPool__NotEnoughFunds();\n\ncontract ETHPool {\n    address public owner;\n    mapping(address => uint256) public deposits;\n    address[] public depositors;\n    uint256 public totalDeposits;\n\n    modifier isOwner() {\n        if (owner != msg.sender) {\n            revert ETHPool__NotTheOwner();\n        }\n        _;\n    }\n\n    constructor() {\n        owner = msg.sender;\n    }\n\n    /// external\n    ///\n\n    function deposit() external payable {\n        _deposit();\n    }\n\n    receive() external payable {\n        _deposit();\n    }\n\n    fallback() external payable {\n        _deposit();\n    }\n\n    function withdraw(uint256 amount) external {\n        if (amount > deposits[msg.sender]) {\n            revert ETHPool__NotEnoughFunds();\n        }\n\n        deposits[msg.sender] -= amount;\n        totalDeposits -= amount;\n\n        (bool ok, ) = payable(msg.sender).call{value: amount}(\"\");\n\n        require(ok, \"Withdrawal failed\");\n    }\n\n    /// owner\n    ///\n\n    function depositRewards() external payable isOwner {\n        uint256 precision = 1e18;\n\n        for (uint256 i = 0; i < depositors.length; i++) {\n            address depositor = depositors[i];\n            uint256 depositorBalance = deposits[depositor];\n            uint256 rewardPct = depositorBalance * precision / totalDeposits;\n            deposits[depositor] += msg.value * rewardPct / precision;\n        }\n\n        totalDeposits += msg.value;\n    }\n\n    /// private\n    ///\n\n    function _deposit() private {\n        depositors.push(msg.sender);\n        deposits[msg.sender] += msg.value; \n        totalDeposits += msg.value;\n    }\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 100
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

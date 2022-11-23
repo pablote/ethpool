@@ -1,0 +1,219 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ETHPool__NotEnoughFunds",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ETHPool__NotTheOwner",
+      "type": "error"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "depositRewards",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositors",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "deposits",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalDeposits",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x42e33a2fd36c058a944066d363483b854adc4445e7f89a65c7d80e0ca610ed9d",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "transactionIndex": 0,
+    "gasUsed": "366587",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x588a101732fb10ff0233fe683513f15cd0e8b7e302de066870c4de2c6d0b8cc2",
+    "transactionHash": "0x42e33a2fd36c058a944066d363483b854adc4445e7f89a65c7d80e0ca610ed9d",
+    "logs": [],
+    "blockNumber": 1,
+    "cumulativeGasUsed": "366587",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "494916056d679a9ea7267a2c41c7ff4a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"ETHPool__NotEnoughFunds\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ETHPool__NotTheOwner\",\"type\":\"error\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositRewards\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"depositors\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"deposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalDeposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deposit()\":{\"notice\":\"external\"},\"depositRewards()\":{\"notice\":\"owner\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ETHPool.sol\":\"ETHPool\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":100},\"remappings\":[]},\"sources\":{\"contracts/ETHPool.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\npragma solidity 0.8.17;\\n\\nerror ETHPool__NotTheOwner();\\nerror ETHPool__NotEnoughFunds();\\n\\ncontract ETHPool {\\n    address public owner;\\n    mapping(address => uint256) public deposits;\\n    address[] public depositors;\\n    uint256 public totalDeposits;\\n\\n    modifier isOwner() {\\n        if (owner != msg.sender) {\\n            revert ETHPool__NotTheOwner();\\n        }\\n        _;\\n    }\\n\\n    constructor() {\\n        owner = msg.sender;\\n    }\\n\\n    /// external\\n    ///\\n\\n    function deposit() external payable {\\n        _deposit();\\n    }\\n\\n    receive() external payable {\\n        _deposit();\\n    }\\n\\n    fallback() external payable {\\n        _deposit();\\n    }\\n\\n    function withdraw(uint256 amount) external {\\n        if (amount > deposits[msg.sender]) {\\n            revert ETHPool__NotEnoughFunds();\\n        }\\n\\n        deposits[msg.sender] -= amount;\\n        totalDeposits -= amount;\\n\\n        (bool ok, ) = payable(msg.sender).call{value: amount}(\\\"\\\");\\n\\n        require(ok, \\\"Withdrawal failed\\\");\\n    }\\n\\n    /// owner\\n    ///\\n\\n    function depositRewards() external payable isOwner {\\n        uint256 precision = 1e18;\\n\\n        for (uint256 i = 0; i < depositors.length; i++) {\\n            address depositor = depositors[i];\\n            uint256 depositorBalance = deposits[depositor];\\n            uint256 rewardPct = depositorBalance * precision / totalDeposits;\\n            deposits[depositor] += msg.value * rewardPct / precision;\\n        }\\n\\n        totalDeposits += msg.value;\\n    }\\n\\n    /// private\\n    ///\\n\\n    function _deposit() private {\\n        depositors.push(msg.sender);\\n        deposits[msg.sender] += msg.value; \\n        totalDeposits += msg.value;\\n    }\\n}\",\"keccak256\":\"0xcfd9dab311854c15a7c9580d2745f0959bbaefdfc5dcc49b9a1096f18aad03e2\",\"license\":\"GPL-3.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b03191633179055610544806100326000396000f3fe6080604052600436106100645760003560e01c8063152111f71461007b5780632e1a7d4d146100835780637d882097146100a35780638da5cb5b146100cc578063d0e30db014610104578063e4b2fb791461010c578063fc7e286d1461012c57610073565b3661007357610071610159565b005b610071610159565b6100716101d9565b34801561008f57600080fd5b5061007161009e36600461041b565b6102e6565b3480156100af57600080fd5b506100b960035481565b6040519081526020015b60405180910390f35b3480156100d857600080fd5b506000546100ec906001600160a01b031681565b6040516001600160a01b0390911681526020016100c3565b6100716103e7565b34801561011857600080fd5b506100ec61012736600461041b565b6103f1565b34801561013857600080fd5b506100b9610147366004610434565b60016020526000908152604090205481565b6002805460018181019092557f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319163390811790915560009081526020919091526040812080543492906101b990849061047a565b9250508190555034600360008282546101d2919061047a565b9091555050565b6000546001600160a01b031633146102045760405163745325d960e01b815260040160405180910390fd5b670de0b6b3a764000060005b6002548110156102cb5760006002828154811061022f5761022f610493565b60009182526020808320909101546001600160a01b031680835260019091526040822054600354919350919061026586846104a9565b61026f91906104c0565b90508461027c82346104a9565b61028691906104c0565b6001600160a01b038416600090815260016020526040812080549091906102ae90849061047a565b9250508190555050505080806102c3906104e2565b915050610210565b5034600360008282546102de919061047a565b909155505050565b3360009081526001602052604090205481111561031657604051635a54fdbb60e11b815260040160405180910390fd5b33600090815260016020526040812080548392906103359084906104fb565b92505081905550806003600082825461034e91906104fb565b9091555050604051600090339083908381818185875af1925050503d8060008114610395576040519150601f19603f3d011682016040523d82523d6000602084013e61039a565b606091505b50509050806103e35760405162461bcd60e51b815260206004820152601160248201527015da5d1a191c985dd85b0819985a5b1959607a1b604482015260640160405180910390fd5b5050565b6103ef610159565b565b6002818154811061040157600080fd5b6000918252602090912001546001600160a01b0316905081565b60006020828403121561042d57600080fd5b5035919050565b60006020828403121561044657600080fd5b81356001600160a01b038116811461045d57600080fd5b9392505050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561048d5761048d610464565b92915050565b634e487b7160e01b600052603260045260246000fd5b808202811582820484141761048d5761048d610464565b6000826104dd57634e487b7160e01b600052601260045260246000fd5b500490565b6000600182016104f4576104f4610464565b5060010190565b8181038181111561048d5761048d61046456fea264697066735822122041788260b184d6718c3c6a453457345e601dcd673a26e1c30ff39145277148c264736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600436106100645760003560e01c8063152111f71461007b5780632e1a7d4d146100835780637d882097146100a35780638da5cb5b146100cc578063d0e30db014610104578063e4b2fb791461010c578063fc7e286d1461012c57610073565b3661007357610071610159565b005b610071610159565b6100716101d9565b34801561008f57600080fd5b5061007161009e36600461041b565b6102e6565b3480156100af57600080fd5b506100b960035481565b6040519081526020015b60405180910390f35b3480156100d857600080fd5b506000546100ec906001600160a01b031681565b6040516001600160a01b0390911681526020016100c3565b6100716103e7565b34801561011857600080fd5b506100ec61012736600461041b565b6103f1565b34801561013857600080fd5b506100b9610147366004610434565b60016020526000908152604090205481565b6002805460018181019092557f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319163390811790915560009081526020919091526040812080543492906101b990849061047a565b9250508190555034600360008282546101d2919061047a565b9091555050565b6000546001600160a01b031633146102045760405163745325d960e01b815260040160405180910390fd5b670de0b6b3a764000060005b6002548110156102cb5760006002828154811061022f5761022f610493565b60009182526020808320909101546001600160a01b031680835260019091526040822054600354919350919061026586846104a9565b61026f91906104c0565b90508461027c82346104a9565b61028691906104c0565b6001600160a01b038416600090815260016020526040812080549091906102ae90849061047a565b9250508190555050505080806102c3906104e2565b915050610210565b5034600360008282546102de919061047a565b909155505050565b3360009081526001602052604090205481111561031657604051635a54fdbb60e11b815260040160405180910390fd5b33600090815260016020526040812080548392906103359084906104fb565b92505081905550806003600082825461034e91906104fb565b9091555050604051600090339083908381818185875af1925050503d8060008114610395576040519150601f19603f3d011682016040523d82523d6000602084013e61039a565b606091505b50509050806103e35760405162461bcd60e51b815260206004820152601160248201527015da5d1a191c985dd85b0819985a5b1959607a1b604482015260640160405180910390fd5b5050565b6103ef610159565b565b6002818154811061040157600080fd5b6000918252602090912001546001600160a01b0316905081565b60006020828403121561042d57600080fd5b5035919050565b60006020828403121561044657600080fd5b81356001600160a01b038116811461045d57600080fd5b9392505050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561048d5761048d610464565b92915050565b634e487b7160e01b600052603260045260246000fd5b808202811582820484141761048d5761048d610464565b6000826104dd57634e487b7160e01b600052601260045260246000fd5b500490565b6000600182016104f4576104f4610464565b5060010190565b8181038181111561048d5761048d61046456fea264697066735822122041788260b184d6718c3c6a453457345e601dcd673a26e1c30ff39145277148c264736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "deposit()": {
+        "notice": "external"
+      },
+      "depositRewards()": {
+        "notice": "owner"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7,
+        "contract": "contracts/ETHPool.sol:ETHPool",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 11,
+        "contract": "contracts/ETHPool.sol:ETHPool",
+        "label": "deposits",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 14,
+        "contract": "contracts/ETHPool.sol:ETHPool",
+        "label": "depositors",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 16,
+        "contract": "contracts/ETHPool.sol:ETHPool",
+        "label": "totalDeposits",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
